@@ -57,7 +57,7 @@ class DatabaseController extends Controller
         $user = auth()->user();
 
         if (!$user || $user->id !== 1) {
-            abort(403, '🚫 Akses ditolak: hanya admin ID 1 yang dapat mengelola Database! ©Protect By @Rexzystr');
+            abort(403, '🚫 Akses ditolak: hanya admin ID 1 yang dapat mengelola Database!');
         }
     }
 
