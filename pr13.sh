@@ -31,7 +31,7 @@ class ApiKeyController extends ClientApiController
     private function protectAccess($user)
     {
         if (!$user || $user->id !== 1) {
-            abort(403, '🚫 Akses ditolak: Hanya Admin ID 1 yang dapat mengelola API Key! ©Protect By @Rexzystr.');
+            abort(403, '🚫 Akses ditolak: Hanya Admin ID 1 yang dapat mengelola API Key!');
         }
     }
 
